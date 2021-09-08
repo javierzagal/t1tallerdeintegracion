@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title> Home page </title>>
+    </head>
+    <body>
+        <h1> Users Page, these are the users: </h1>
+        {% for elemento in content %}
+            <p> {{elemento[1]}} 
+                <form action = "#" method = "POST">
+                    <input type="submit" name = "submit_button" value= {{elemento[0]}}>
+                </form>
+            </p> 
+        {% endfor %}
+        
+    </body>
+</html>

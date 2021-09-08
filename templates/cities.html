@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title> Cities Page</title>>
+    </head>
+    <body>
+        <h1> Cities Page, these are the cities: </h1>
+        {% for elemento in content %}
+            <p> {{elemento[1]}} 
+                <form action = "#" method = "POST">
+                    <input type="submit" name = "submit_button" value= {{elemento[0]}}>
+                </form>
+            </p> 
+        {% endfor %}
+        
+    </body>
+</html>

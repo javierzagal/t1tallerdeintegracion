@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> City page </title>>
+    </head>
+    <body>
+        <h1> City Page, this is the information of {{content[0]}}: </h1>
+        {% if content[1] != []%}
+        <b> Users </b>
+        {% for subelemento in content[1] %}
+        <div class="row">
+            {{subelemento[0]}} 
+            <form action = "#" method = "POST">
+                <input type="submit" name = "submit_button" value= {{subelemento[1]}}>
+            </form>
+
+        </div>
+        
+        {% endfor %}
+        {%endif%}
+        {%if content[1] == []%}
+        <p> There are no users registered in this city</p>
+        {%endif%}
+
+    
+
+
+        
+    </body>
+</html>

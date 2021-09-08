@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> User page </title>>
+    </head>
+    <body>
+        <h1> User Page, esta es la informacion de {{content[2]}} : </h1>
+
+        <p> Datos tarjeta </p>
+        {% for subelemento in content[0][0] %}
+        <p> {{subelemento}} </p>
+        {% endfor %}
+
+        <p> Datos direccion</p>
+        {% for subelemento in content[1][0] %}
+        <p> {{subelemento}} </p>
+        {% endfor %}
+
+
+        
+    </body>
+</html>
